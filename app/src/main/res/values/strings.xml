@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">练手demo</string>
+    <string name="loan_way">贷款方式:</string>
+    <string name="pay_way">还款方式:</string>
+    <string name="loan_total">贷款总额:</string>
+    <string name="loan_rate">贷款利率:</string>
+    <string name="loan_years">贷款年限:</string>
+    <string name="early_year">提前还贷时间:</string>
+    <string name="first_year">首次还贷时间:</string>
+</resources>

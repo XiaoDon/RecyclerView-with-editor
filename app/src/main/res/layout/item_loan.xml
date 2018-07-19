@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/check_box"
+        android:src="@mipmap/ic_uncheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <!--第1列-->
+
+        <TextView
+            android:id="@+id/loan_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="贷款方式:" />
+
+        <TextView
+            android:id="@+id/pay_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_way"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="还款方式:" />
+
+        <TextView
+            android:id="@+id/loan_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_way"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="贷款总额:" />
+
+        <TextView
+            android:id="@+id/loan_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_total"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="贷款利率:" />
+
+        <TextView
+            android:id="@+id/loan_way_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pay_way"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/pay_way_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_way_val"
+            android:layout_toRightOf="@id/pay_way"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/loan_total_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_way_val"
+            android:layout_toRightOf="@id/loan_total"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/loan_rate_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_total_val"
+            android:layout_toRightOf="@id/loan_rate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="4" />
+
+        <!--第二列-->
+        <TextView
+            android:id="@+id/loan_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/loan_way_val"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="贷款年限:" />
+
+        <TextView
+            android:id="@+id/pay_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_year"
+            android:layout_toRightOf="@id/pay_way_val"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="提前还贷:" />
+
+        <TextView
+            android:id="@+id/first_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_year"
+            android:layout_toRightOf="@id/loan_total_val"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="首次还贷:" />
+
+        <TextView
+            android:id="@+id/loan_year_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/loan_year"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/pay_year_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_year_val"
+            android:layout_toRightOf="@id/pay_year"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/first_time_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_year_val"
+            android:layout_toRightOf="@id/first_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="7" />
+
+        <!--View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_light" /-->
+
+    </RelativeLayout>
+</LinearLayout>
